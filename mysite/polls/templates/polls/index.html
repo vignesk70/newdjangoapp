@@ -1,0 +1,19 @@
+{% load django_bootstrap5 %} {% bootstrap_css %} {% bootstrap_javascript %}
+
+  {% load static%}
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
+{% if latest_question_list %}
+<div class="container">
+  <img src="{% static 'polls/images/poll.png' %}" class="img-fluid mb-3" alt="Pollster Image" style="width:100px"/>
+<ul class="list-group mb-3">
+    {% for question in latest_question_list %}
+    <li class="list-group-item mb-3">
+        <a href="{% url 'polls:detail' question.id %}">{{question.question_text}}</a>
+    </li>
+    {% endfor %}
+</ul>
+</div>
+{% else %}
+<p>No polls found</p>
+{% endif %}

@@ -1,0 +1,48 @@
+# Django
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+media/
+staticfiles/
+local_settings.py
+
+# Virtualenv
+venv/
+ENV/
+env/
+.venv/
+.env/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# PyCharm
+.idea/
+
+# Coverage reports
+htmlcov/
+.coverage
+.tox/
+.nox/
+.cache/
+.pytest_cache/
+
+# Migrations
+**/migrations/*.pyc
+**/migrations/__pycache__/
+**/migrations/*.pyo
+**/migrations/*.pyd
+**/migrations/*.db
+**/migrations/*.sqlite3
+**/migrations/*.log
+**/migrations/*.pot
+**/migrations/*.mo
+**/migrations/*.py
+
+# Node modules (if using frontend tools)
+node_modules/

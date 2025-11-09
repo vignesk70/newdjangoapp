@@ -1,0 +1,10 @@
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+<div class="container">
+    <h1>Voter List</h1>
+    <ul class="list-group">
+        {% for items in voter_list %}
+        <li class="list-group-item">{{ items.voter_name }} -- {{ items.choice.question.question_text}} {{ items.choice.choice_text }} ({{ items.choice.votes }} votes)</li>
+        {% endfor %}
+    </ul>
+</div>
