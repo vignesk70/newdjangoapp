@@ -3,8 +3,10 @@ beautifulsoup4==4.14.2
 Django==5.2.7
 django-bootstrap5==25.2
 et_xmlfile==2.0.0
+gunicorn==23.0.0
 numpy==2.3.4
 openpyxl==3.1.5
+packaging==25.0
 pandas==2.3.3
 python-dateutil==2.9.0.post0
 pytz==2025.2
